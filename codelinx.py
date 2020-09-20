@@ -55,10 +55,10 @@ class chain(object):
 
 class Bucket(object):
     def __init__(self):
-        self.list = {}
+        self.funclist = {}
 
     def bindfunc(self,funcname,link):
-        self.list[funcname] = link
+        self.funclist[funcname] = link
         setattr(self, funcname, link)
 
     def delfunc(self,func):
